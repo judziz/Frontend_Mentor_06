@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background-color: hsla(216, 55%, 47%, 0.273);
+}
+
+.container {
+  display: flex;
+  margin: 15rem auto auto auto;
+  justify-content: center;
+}
+.cards {
+  max-width: 70rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.9fr 1.2fr;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 5px 50px 5px hsla(216, 22%, 67%, 0.852);
+}
+
+/* CARD 1 */
+.card-1 {
+  grid-column: 1/3;
+  padding: 4rem 4rem 4rem 5rem;
+}
+.card-1-heading {
+  font-size: 2.5rem;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2rem;
+}
+
+.card-1-subheading {
+  font-size: 2rem;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.5rem;
+}
+.card-1-txt {
+  font-size: 1.7rem;
+  color: hsla(216, 22%, 67%, 0.852);
+  line-height: 1.7;
+}
+.card-2,
+.card-3 {
+  grid-row: 2;
+}
+/* CARD 2 */
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 4rem;
+  background-color: hsla(179, 56%, 43%, 0.911);
+}
+.card-2-heading {
+  color: #ffffffd3;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.price {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ffffffd3;
+}
+.price-txt {
+  font-size: 1.9rem;
+  color: #ffffff94;
+}
+.price-box-txt {
+  font-size: 1.8rem;
+  color: #ffffffb5;
+  margin-bottom: 3rem;
+}
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  width: 100%;
+  height: 5.3rem;
+  border-radius: 1rem;
+  color: #ffffffd2;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.btn:hover {
+  cursor: pointer;
+}
+/* CARD 2 */
+.card-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 4rem;
+  background-color: hsla(179, 56%, 43%, 0.852);
+}
+.card-3-heading {
+  color: #ffffffd3;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.card-3-lst {
+  list-style-type: none;
+  line-height: 1.4;
+  font-size: 1.7rem;
+  color: #ffffff94;
+}
+@media (max-width: 43em) {
+  .container {
+    margin: 15rem auto 15rem auto;
+  }
+  .cards {
+    max-width: 34rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.9fr 0.9fr;
+  }
+  .card-1 {
+    padding: 3rem 1rem 3.5rem 2rem;
+  }
+  .card-2 {
+    padding: 3rem 1rem 3rem 2rem;
+  }
+  .card-3 {
+    padding: 2rem 1rem 3rem 2rem;
+  }
+  .card-3 {
+    grid-row: 3;
+  }
+  .card-1-txt {
+    font-size: 1.6rem;
+  }
+}
